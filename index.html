@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Document</title>
+        <style>
+            body{
+                font-family: "Poppins", sans-serif;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+                align-items: center;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .main_title{
+                font-weight: 700;
+                font-size:30px;
+                line-height: 45px;
+                color:#000;
+                margin-block: 0 10px;
+            }
+            .text{
+                font-weight: 400;
+                font-size:16px;
+                line-height: 24px;
+                color:#525252;
+                margin-bottom: 24px;
+
+            }
+
+            .login-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fff;
+                padding: 20px;
+                flex: 50% 1 1;
+            }
+
+            .input-group {
+                display: flex;
+                align-items: center;
+                margin-bottom: 18px;
+                position: relative;
+            }
+            ::-webkit-input-placeholder{
+                font-weight: 400;
+                font-size:12px;
+                color:#000;
+                padding-left: 10px;
+            }
+
+            input {
+                width: 364px;
+                border-radius: 16px;
+                border: none;
+                background: #F0EDFF;
+                background-repeat: no-repeat;
+                background-position:17px;
+                padding: 18px 18px 18px 41px;
+            }
+            input:focus{
+                border: 1px solid #525252;
+            }
+            input.input_text{
+                background-image: url('./username.svg');
+            }
+            input.input_pass{
+                background-image: url('./lock.svg');
+            }
+
+            button {
+                width: 124px;
+                max-width: 100%;
+                padding: 17px 30px;
+                background: linear-gradient(to right, #9181F4 0%, #5038ED 100%);
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 0 8px 21px 0 #00000029;
+                font-weight: 700;
+                font-size:12px;
+                line-height: 18px;
+                margin-bottom: 24px;
+            }
+            .text span{
+                font-weight: 700;
+                font-size:16px;
+                line-height: 24px;
+            }
+            .line::before{
+                content:'';
+                border-bottom: 1px solid #F0EDFF;
+                width:100px;
+                margin-right: 10px;
+                display: inline-block;
+            }
+            .line::after{
+                content:'';
+                border-bottom: 1px solid #F0EDFF;
+                width:100px;
+                margin-left: 10px;
+                display: inline-block;
+            }
+            .social-links .input-group{
+                border: 1px solid #F0EDFF;
+                background-color: #fff;
+                width: 364px;
+                border-radius: 16px;
+                justify-content: center;
+            }
+            .social-links .input-group img{
+                padding: 11px;
+            }
+            .mini_text{
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                padding: 17px;
+            }
+            .mini_text span{
+                font-weight: 700;
+                
+            }
+            .icon_social{
+                width: 30px;
+                height: 30px;
+            }
+
+            .image-column {
+                flex: 50% 1 1;
+                background: url('./bg.png');
+                background-size: cover;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .glass{
+                height: 547px;
+                width: 450px;
+                position: relative;
+                z-index: 10;
+                background: #eae6e65e;
+                border-radius: 35px;
+                border: 1px solid #e6e6e6a6;
+                display: block;
+            }
+            .image-column .img_woman{
+                position: absolute;
+                bottom: 0;
+                right: -50px;
+            }
+            .image-column .img_zoro{
+                position: absolute;
+                bottom: 111px;
+                left: -40px;
+            }
+            .glass::before{
+                content:" Very good works are waiting for you Login Now!!!";
+                display: block;
+                padding: 26px;
+                width: 185px;
+                color: #fff;
+                font-size: 32px;
+                line-height: 46px;
+                font-weight: 700;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="login-form">
+                <h2 class="main_title">Login</h2>
+                <div class="text">How to i get started lorem ipsum dolor at?</div>
+                <div class="input-group">
+                    <input class="input_text" type="text" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <input class="input_pass" type="password" placeholder="Password">
+                </div>
+                <button>Login</button>
+               <br> <div class="text line"><span>Login</span> with Others</div>
+                <div class="social-links">
+                    <div class="input-group">
+                        <img src="./google.svg" alt="">
+                        <div class="mini_text">Login with <span>google</span></div>
+                    </div>
+                    <div class="input-group">
+                        <img src="./facebook.svg" alt="">
+                        <div class="mini_text">Login with <span>Facebook</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-column">
+                <div class="glass">
+                    <img class="img_woman" src="./women.png"/>
+                    <img class="img_zoro" src="./zoro.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
